@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@source "../js/**/*.jsx";
+@source "../views/**/*.blade.php";
+
+@font-face {
+    font-family: "Maven Pro";
+    src: url("/fonts/MavenPro-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400 900;
+    font-display: swap;
+}
+
+@theme {
+    --font-sans: "Maven Pro", sans-serif;
+    --font-serif: "Maven Pro", sans-serif;
+}
+
+@layer base {
+    html {
+        @apply font-sans;
+    }
+}
+
+@theme {
+    --color-author-bg: #f4f7eb;
+    --color-author-surface: #ffffff;
+    --color-author-primary: #89b83f;
+    --color-author-primary-hover: #719e2f;
+    --color-author-accent: #f4cc63;
+    --color-author-text: #25291f;
+    --color-author-muted: #74796c;
+    --color-author-border: #e1e8d7;
+}
